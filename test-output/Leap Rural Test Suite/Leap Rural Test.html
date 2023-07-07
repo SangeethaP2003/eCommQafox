@@ -1,0 +1,1140 @@
+<html>
+<head>
+<title>TestNG:  Leap Rural Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Leap Rural Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/1/71</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jun 15 14:51:49 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>11 seconds (11970 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.leaprural.andriodtests.ISRMobilePrimaryOrder.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.ISRMobilePrimaryOrder</td>
+<td><div><pre>java.lang.AssertionError: Back button should be displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.leaprural.business.ApplicationMobile.MobileLogout(ApplicationMobile.java:772)
+	at com.leaprural.business.ApplicationMobile.CheckDriver(ApplicationMobile.java:797)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1699578227", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1699578227'><pre>java.lang.AssertionError: Back button should be displayed expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at com.leaprural.business.ApplicationMobile.MobileLogout(ApplicationMobile.java:772)
+	at com.leaprural.business.ApplicationMobile.CheckDriver(ApplicationMobile.java:797)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:564)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:213)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:786)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.ISRMobilePrimaryOrder@63440df3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.leaprural.andriodtests.ISRMobilePrimaryOrder.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.ISRMobilePrimaryOrder</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.ISRMobilePrimaryOrder@63440df3</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD.getResult()'><b>getResult</b><br>Test class: com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD@58c1670b</td></tr>
+<tr>
+<td title='com.leaprural.Reports.ClaimWorkingSheetTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.Reports.ClaimWorkingSheetTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.ClaimWorkingSheetTest@77ec78b9</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryReturns.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryReturns</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryReturns@59906517</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryReturns.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryReturns</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryReturns@59906517</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.Reports.DetailedSalesRegisterGSTTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.Reports.DetailedSalesRegisterGSTTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.DetailedSalesRegisterGSTTest@7a3d45bd</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryOrder.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryOrder</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryOrder@27f723</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryOrder.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryOrder</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryOrder@27f723</td></tr>
+<tr>
+<td title='com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest@2c039ac6</td></tr>
+<tr>
+<td title='com.leaprural.Reports.PurchaseRegisterGSTTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.Reports.PurchaseRegisterGSTTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.PurchaseRegisterGSTTest@25af5db5</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryOrder.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryOrder</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryOrder@27f723</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryOrder.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryOrder</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryOrder@27f723</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.claimstest.ClaimsValidationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.claimstest.ClaimsValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.claimstest.ClaimsValidationTest@a38d7a3</td></tr>
+<tr>
+<td title='com.leaprural.claimstest.ClaimsValidationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.claimstest.ClaimsValidationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.claimstest.ClaimsValidationTest@a38d7a3</td></tr>
+<tr>
+<td title='com.leaprural.Reports.RetailerReportTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.Reports.RetailerReportTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.RetailerReportTest@ed9d034</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.homepagedashboardtests.ValidateDashboardTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.homepagedashboardtests.ValidateDashboardTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.homepagedashboardtests.ValidateDashboardTest@1060b431</td></tr>
+<tr>
+<td title='com.leaprural.Reports.SalesReturnSummaryTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.Reports.SalesReturnSummaryTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.SalesReturnSummaryTest@45820e51</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu@74ad1f1f</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu@74ad1f1f</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu@74ad1f1f</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu@74ad1f1f</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileSchemesMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileSchemesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileSchemesMenu@38bc8ab5</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileSchemesMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileSchemesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileSchemesMenu@38bc8ab5</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockAnalysisReportTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.StockAnalysisReportTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockAnalysisReportTest@76a3e297</td></tr>
+<tr>
+<td title='com.leaprural.Reports.SummarySalesRegisterGSTTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.Reports.SummarySalesRegisterGSTTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.SummarySalesRegisterGSTTest@60285225</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileSchemesMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileSchemesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileSchemesMenu@38bc8ab5</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileSchemesMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileSchemesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileSchemesMenu@38bc8ab5</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockLedgerTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.StockLedgerTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockLedgerTest@87f383f</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockLedgerTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.StockLedgerTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockLedgerTest@87f383f</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.CheckDriver()'><b>CheckDriver</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.getResult()'><b>getResult</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.InvoiceCancellationValidationsTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.InvoiceCancellationValidationsTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.InvoiceCancellationValidationsTest@eafc191</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.InvoiceCancellationValidationsTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.InvoiceCancellationValidationsTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.InvoiceCancellationValidationsTest@eafc191</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.InvoiceCancellationValidationsTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.InvoiceCancellationValidationsTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.InvoiceCancellationValidationsTest@eafc191</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockSummaryTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.StockSummaryTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockSummaryTest@7ce6a65d</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockSummaryTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.StockSummaryTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockSummaryTest@7ce6a65d</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockSummaryTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.StockSummaryTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockSummaryTest@7ce6a65d</td></tr>
+<tr>
+<td title='com.leaprural.GRNTest.GoodReceiptNoteTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.GRNTest.GoodReceiptNoteTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.GRNTest.GoodReceiptNoteTest@3e57cd70</td></tr>
+<tr>
+<td title='com.leaprural.GRNTest.GoodReceiptNoteTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.GRNTest.GoodReceiptNoteTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.GRNTest.GoodReceiptNoteTest@3e57cd70</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.SubDStockTransfer.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.SubDStockTransfer</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.SubDStockTransfer@5bb21b69</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.SubDStockTransfer.getResult()'><b>getResult</b><br>Test class: com.leaprural.stocktests.SubDStockTransfer</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.SubDStockTransfer@5bb21b69</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest@11758f2a</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest@11758f2a</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.VerifyOrderStatusValues.getResult()'><b>getResult</b><br>Test class: com.leaprural.purchaseordertests.VerifyOrderStatusValues</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.VerifyOrderStatusValues@e874448</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest@462d5aee</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest@462d5aee</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest@5bcea91b</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest@5bcea91b</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR.getResult()'><b>getResult</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR@1b26f7b2</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest@5ed828d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest@5ed828d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest@5ed828d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.DeliveryConfirmationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.DeliveryConfirmationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.DeliveryConfirmationTest@23d2a7e8</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.DeliveryConfirmationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.DeliveryConfirmationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.DeliveryConfirmationTest@23d2a7e8</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.DeliveryConfirmationTest.getResult()'><b>getResult</b><br>Test class: com.leaprural.salesordertests.DeliveryConfirmationTest</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.DeliveryConfirmationTest@23d2a7e8</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.logOut()'><b>logOut</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.endReport()'><b>endReport</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest</td>
+<td></td>
+<td>0</td>
+<td>null</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.leaprural.andriodtests.ISRMobilePrimaryOrder.ISRMobilePrimaryOrderCreation()'><b>ISRMobilePrimaryOrderCreation</b><br>Test class: com.leaprural.andriodtests.ISRMobilePrimaryOrder<br>Parameters: 8789, NICE BANGLES, MEN ACTIVE SPORT FACE WASH 100ML, 2</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: Connection refused: connect
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;ATLBLRLP-61&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
+	at java.util.Optional.orElseGet(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:95)
+	at com.leaprural.drivers.DriverManager.switchToNextInstance(DriverManager.java:239)
+	at com.leaprural.andriodtests.ISRMobilePrimaryOrder.ISRMobilePrimaryOrderCreation(ISRMobilePrimaryOrder.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	... 36 more
+</pre></div><a href='#' onClick='toggleBox("stack-trace1692073709", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1692073709'><pre>org.openqa.selenium.WebDriverException: Connection refused: connect
+Build info: version: &apos;3.141.5&apos;, revision: &apos;d54ebd709a&apos;, time: &apos;2018-11-06T11:42:16&apos;
+System info: host: &apos;ATLBLRLP-61&apos;, ip: &apos;192.168.1.6&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_333&apos;
+Driver info: driver.version: AndroidDriver
+	at io.appium.java_client.remote.AppiumCommandExecutor.lambda$5(AppiumCommandExecutor.java:251)
+	at java.util.Optional.orElseGet(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at io.appium.java_client.DefaultGenericMobileDriver.execute(DefaultGenericMobileDriver.java:42)
+	at io.appium.java_client.AppiumDriver.execute(AppiumDriver.java:1)
+	at io.appium.java_client.android.AndroidDriver.execute(AndroidDriver.java:1)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:131)
+	at io.appium.java_client.DefaultGenericMobileDriver.&lt;init&gt;(DefaultGenericMobileDriver.java:38)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:84)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:94)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:95)
+	at com.leaprural.drivers.DriverManager.switchToNextInstance(DriverManager.java:239)
+	at com.leaprural.andriodtests.ISRMobilePrimaryOrder.ISRMobilePrimaryOrderCreation(ISRMobilePrimaryOrder.java:14)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at okhttp3.internal.platform.Platform.connectSocket(Platform.java:129)
+	at okhttp3.internal.connection.RealConnection.connectSocket(RealConnection.java:245)
+	at okhttp3.internal.connection.RealConnection.connect(RealConnection.java:165)
+	at okhttp3.internal.connection.StreamAllocation.findConnection(StreamAllocation.java:257)
+	at okhttp3.internal.connection.StreamAllocation.findHealthyConnection(StreamAllocation.java:135)
+	at okhttp3.internal.connection.StreamAllocation.newStream(StreamAllocation.java:114)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.java:42)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.java:93)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.java:126)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:147)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.java:121)
+	at okhttp3.RealCall.getResponseWithInterceptorChain(RealCall.java:200)
+	at okhttp3.RealCall.execute(RealCall.java:77)
+	at org.openqa.selenium.remote.internal.OkHttpClient.execute(OkHttpClient.java:103)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:102)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at io.appium.java_client.remote.AppiumCommandExecutor$1.createSession(AppiumCommandExecutor.java:186)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:217)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:239)
+	... 36 more
+</pre></div></td>
+<td>2</td>
+<td>com.leaprural.andriodtests.ISRMobilePrimaryOrder@63440df3</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.leaprural.salesordertests.InvoiceCancellationValidationsTest.CancelInvoiceForFullyDeliveredOrder()'><b>CancelInvoiceForFullyDeliveredOrder</b><br>Test class: com.leaprural.salesordertests.InvoiceCancellationValidationsTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.InvoiceCancellationValidationsTest@eafc191</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.InvoiceCancellationValidationsTest.CancelInvoiceForPartialDeliveredOrder()'><b>CancelInvoiceForPartialDeliveredOrder</b><br>Test class: com.leaprural.salesordertests.InvoiceCancellationValidationsTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.InvoiceCancellationValidationsTest@eafc191</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryOrder.ConfirmPrimaryOrderFromISR()'><b>ConfirmPrimaryOrderFromISR</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryOrder<br>Parameters: 1234, 8789, MEN ACTIVE SPORT FACE WASH 100ML, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryOrder@27f723</td></tr>
+<tr>
+<td title='com.leaprural.GRNTest.GoodReceiptNoteTest.CreateGRN()'><b>CreateGRN</b><br>Test class: com.leaprural.GRNTest.GoodReceiptNoteTest<br>Parameters: 610765, 610765, CP, RU, NICE BANGLES, 7000629, 2, 8789, 712474, 200707</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.GRNTest.GoodReceiptNoteTest@3e57cd70</td></tr>
+<tr>
+<td title='com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest.CreatePrimaryReturnAndApproveBySS()'><b>CreatePrimaryReturnAndApproveBySS</b><br>Test class: com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest<br>Parameters: 610765, 610765, 712474, 200707, CP, RU, Damaged/Expired, B81800087</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest@2c039ac6</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR.CreatePurchaseorderBySUBD()'><b>CreatePurchaseorderBySUBD</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR<br>Parameters: 610765, 610765, CP, RU, NICE BANGLES [ MAHARANA PRATAP CHOUKMAIN MARKET TALWARAUDAIPUR], 7002893, [7002893] MEN ACTIVE SPORT FACE WASH 100ML, 2, 8789</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR@1b26f7b2</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.DeleteProductsInPrimaryOrderExcelUpload()'><b>DeleteProductsInPrimaryOrderExcelUpload</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest<br>Parameters: 610765, 610765, CP, RU, NICE BANGLES [ MAHARANA PRATAP CHOUKMAIN MARKET TALWARAUDAIPUR], 
+7002031, [7002031] ALOE & CUCUMBER REFRESHING BODY LOTION 400ml, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.DeliveryConfirmation()'><b>DeliveryConfirmation</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.DeliveryConfirmationTest.DeliveryConfirmationPageFieldsValidationTest()'><b>DeliveryConfirmationPageFieldsValidationTest</b><br>Test class: com.leaprural.salesordertests.DeliveryConfirmationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.DeliveryConfirmationTest@23d2a7e8</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.DeliveryConfirmationTest.DeliveryConfirmationSearchSalesOrderNum()'><b>DeliveryConfirmationSearchSalesOrderNum</b><br>Test class: com.leaprural.salesordertests.DeliveryConfirmationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.DeliveryConfirmationTest@23d2a7e8</td></tr>
+<tr>
+<td title='com.leaprural.GRNTest.GoodReceiptNoteTest.GRNPageFieldsValidationTest()'><b>GRNPageFieldsValidationTest</b><br>Test class: com.leaprural.GRNTest.GoodReceiptNoteTest<br>Parameters: 610765, 610765, CP, RU, NICE BANGLES, 7000629, 2, 8789, 712474, 200707</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.GRNTest.GoodReceiptNoteTest@3e57cd70</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD.ISRpurchaseorderconfirmationbySUBDweb()'><b>ISRpurchaseorderconfirmationbySUBDweb</b><br>Test class: com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD<br>Parameters: 8789, NICE BANGLES, MEN ACTIVE SPORT FACE WASH 100ML, 2, 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD@58c1670b</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.DeliveryConfirmationTest.OrderSearchwithRetailerType()'><b>OrderSearchwithRetailerType</b><br>Test class: com.leaprural.salesordertests.DeliveryConfirmationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.DeliveryConfirmationTest@23d2a7e8</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.PartialOrderDelivery()'><b>PartialOrderDelivery</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.PrimaryOrderExcelDownloadAndValidateFields()'><b>PrimaryOrderExcelDownloadAndValidateFields</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest<br>Parameters: 610765, 610765, CP, RU, NICE BANGLES [ MAHARANA PRATAP CHOUKMAIN MARKET TALWARAUDAIPUR], 
+7002031, [7002031] ALOE & CUCUMBER REFRESHING BODY LOTION 400ml, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.PrimaryOrderExcelUpload()'><b>PrimaryOrderExcelUpload</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest<br>Parameters: 610765, 610765, CP, RU, NICE BANGLES [ MAHARANA PRATAP CHOUKMAIN MARKET TALWARAUDAIPUR], 
+7002031, [7002031] ALOE & CUCUMBER REFRESHING BODY LOTION 400ml, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryOrder.SUBDMobileCreatePrimaryOrder()'><b>SUBDMobileCreatePrimaryOrder</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryOrder<br>Parameters: 1234, 8789, MEN ACTIVE SPORT FACE WASH 100ML, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryOrder@27f723</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobilePrimaryReturns.SUBDMobilePrimaryReturnsOrder()'><b>SUBDMobilePrimaryReturnsOrder</b><br>Test class: com.leaprural.andriodtests.SUBDMobilePrimaryReturns<br>Parameters: 1234, MEN ACTIVE SPORT FACE WASH 100ML, B53900065, 3, 2, 2, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobilePrimaryReturns@59906517</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu.SUBDMobileRetailersInfoTestTest()'><b>SUBDMobileRetailersInfoTestTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu<br>Parameters: 1234, ANNAPURNA BHANDAR (RU00756769)</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu@74ad1f1f</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu.SUBDMobileRetailersInfo_SyncTest()'><b>SUBDMobileRetailersInfo_SyncTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu<br>Parameters: 1234</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu@74ad1f1f</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileSchemesMenu.SUBDMobileSchemesTest()'><b>SUBDMobileSchemesTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileSchemesMenu<br>Parameters: 1234</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileSchemesMenu@38bc8ab5</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileSchemesMenu.SUBDMobileSchemes_SyncTest()'><b>SUBDMobileSchemes_SyncTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileSchemesMenu<br>Parameters: 1234</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileSchemesMenu@38bc8ab5</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.SUBDMobileStockLedgerTest()'><b>SUBDMobileStockLedgerTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu<br>Parameters: 1234, MEN ACTIVE SPORT FACE WASH 100ML</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.SUBDMobileStockSummaryTest()'><b>SUBDMobileStockSummaryTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu<br>Parameters: 1234, MEN ACTIVE SPORT FACE WASH 100ML</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileStockMenu.SUBDMobileStockSyncTest()'><b>SUBDMobileStockSyncTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileStockMenu<br>Parameters: 1234</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileStockMenu@6043cd28</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.SUBDMobileUserActivities_FeedbackTest()'><b>SUBDMobileUserActivities_FeedbackTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu<br>Parameters: 1234, Good</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.SUBDMobileUserActivities_InfoTest()'><b>SUBDMobileUserActivities_InfoTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu<br>Parameters: 1234</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.SUBDMobileUserActivities_ProfileTest()'><b>SUBDMobileUserActivities_ProfileTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu<br>Parameters: 1234</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu.SUBDMobileUserActivities_SupportTest()'><b>SUBDMobileUserActivities_SupportTest</b><br>Test class: com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu<br>Parameters: 1234,  Creating service request</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu@12f41634</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest.SecondarySalesReturnAndConfirmTest()'><b>SecondarySalesReturnAndConfirmTest</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7002590, B53800030, [7002590] ACTIVE FRESH GEL 80G, 10, 10, 0, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest@5bcea91b</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest.SecondarySalesReturnConfirmPageFields()'><b>SecondarySalesReturnConfirmPageFields</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7002590, B53800030, [7002590] ACTIVE FRESH GEL 80G, 10, 10, 0, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest@11758f2a</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest.SecondarySalesReturnConfirmPageSearch()'><b>SecondarySalesReturnConfirmPageSearch</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7002590, B53800030, [7002590] ACTIVE FRESH GEL 80G, 10, 10, 0, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest@11758f2a</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest.SecondarySalesReturnExcelUpload()'><b>SecondarySalesReturnExcelUpload</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7002590, B53800030, [7002590] ACTIVE FRESH GEL 80G, 10, 10, 0, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest@462d5aee</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest.SecondarySalesReturnExcelUploadPageFieldValidation()'><b>SecondarySalesReturnExcelUploadPageFieldValidation</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7002590, B53800030, [7002590] ACTIVE FRESH GEL 80G, 10, 10, 0, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest@462d5aee</td></tr>
+<tr>
+<td title='com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest.SecondarySalesReturnPageValidationTest()'><b>SecondarySalesReturnPageValidationTest</b><br>Test class: com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7002590, B53800030, [7002590] ACTIVE FRESH GEL 80G, 10, 10, 0, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest@5bcea91b</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockAnalysisReportTest.StockAnalysis()'><b>StockAnalysis</b><br>Test class: com.leaprural.stocktests.StockAnalysisReportTest<br>Parameters: 610765, 610765, RU</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockAnalysisReportTest@76a3e297</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockLedgerTest.StockLedgerDownloadAndValidate()'><b>StockLedgerDownloadAndValidate</b><br>Test class: com.leaprural.stocktests.StockLedgerTest<br>Parameters: 610765, 610765, RU</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockLedgerTest@87f383f</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockLedgerTest.StockLedgerPageFieldsvalidationTest()'><b>StockLedgerPageFieldsvalidationTest</b><br>Test class: com.leaprural.stocktests.StockLedgerTest<br>Parameters: 610765, 610765, RU</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockLedgerTest@87f383f</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.SubDStockTransfer.StockTransferApprovedBySalesOfficer()'><b>StockTransferApprovedBySalesOfficer</b><br>Test class: com.leaprural.stocktests.SubDStockTransfer<br>Parameters: 610765, 610765, HI00016897, hi@6889, CP, RU, 610077, 610078, 7004637, 2, PERSONAL HYGIENE</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.SubDStockTransfer@5bb21b69</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.SubDStockTransfer.StockTransferCancelInvoice()'><b>StockTransferCancelInvoice</b><br>Test class: com.leaprural.stocktests.SubDStockTransfer<br>Parameters: 610765, 610765, HI00016897, hi@6889, CP, RU, 610077, 610078, 7004637, 2, PERSONAL HYGIENE</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.SubDStockTransfer@5bb21b69</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest.ValidateGSTInfolink()'><b>ValidateGSTInfolink</b><br>Test class: com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest<br>Parameters: 610765, 610765, CP, RU, NICE BANGLES [ MAHARANA PRATAP CHOUKMAIN MARKET TALWARAUDAIPUR], 
+7002031, [7002031] ALOE & CUCUMBER REFRESHING BODY LOTION 400ml, 2</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest@7a187f14</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.InvoiceCancellationValidationsTest.ValidateInvoiceCancellation()'><b>ValidateInvoiceCancellation</b><br>Test class: com.leaprural.salesordertests.InvoiceCancellationValidationsTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.InvoiceCancellationValidationsTest@eafc191</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockSummaryTest.ValidateSearchWithProductID()'><b>ValidateSearchWithProductID</b><br>Test class: com.leaprural.stocktests.StockSummaryTest<br>Parameters: 610765, 610765, RU, 7000854, PURIFYING NEEM FACE WASH 12X15ML BLISTER</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockSummaryTest@7ce6a65d</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockSummaryTest.ValidateSearchWithProductName()'><b>ValidateSearchWithProductName</b><br>Test class: com.leaprural.stocktests.StockSummaryTest<br>Parameters: 610765, 610765, RU, 7000854, PURIFYING NEEM FACE WASH 12X15ML BLISTER</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockSummaryTest@7ce6a65d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.ValidatemultipleMRPproducts()'><b>ValidatemultipleMRPproducts</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.VerifyActiveRetailersListAscendingOrder()'><b>VerifyActiveRetailersListAscendingOrder</b><br>Test class: com.leaprural.salesordertests.CashOrderTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest.VerifyCashDiscountFieldValidations()'><b>VerifyCashDiscountFieldValidations</b><br>Test class: com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest@5ed828d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.VerifyCashOrderForStandradPackSizeProducts()'><b>VerifyCashOrderForStandradPackSizeProducts</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest.VerifyOrderPagePreviewDetails()'><b>VerifyOrderPagePreviewDetails</b><br>Test class: com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest@5ed828d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.VerifyStdPackCashorderPageDetailsQtyValidation()'><b>VerifyStdPackCashorderPageDetailsQtyValidation</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.VerifyStdPackInvoiceCancellation()'><b>VerifyStdPackInvoiceCancellation</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize.VerifyStdPackInvoiceEdit()'><b>VerifyStdPackInvoiceEdit</b><br>Test class: com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize@757942a1</td></tr>
+<tr>
+<td title='com.leaprural.stocktests.StockSummaryTest.VerifyStockorderdetailspage()'><b>VerifyStockorderdetailspage</b><br>Test class: com.leaprural.stocktests.StockSummaryTest<br>Parameters: 610765, 610765, RU, 7000854, PURIFYING NEEM FACE WASH 12X15ML BLISTER</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.stocktests.StockSummaryTest@7ce6a65d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.VerifyTheCashorderPageDetails()'><b>VerifyTheCashorderPageDetails</b><br>Test class: com.leaprural.salesordertests.CashOrderTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.VerifyTheCashorderPageDetailsQtyValidation()'><b>VerifyTheCashorderPageDetailsQtyValidation</b><br>Test class: com.leaprural.salesordertests.CashOrderTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest.VerifyTheRetailerCreditOrder()'><b>VerifyTheRetailerCreditOrder</b><br>Test class: com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest@5ed828d</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.VerifyTheRetailerPageDetails()'><b>VerifyTheRetailerPageDetails</b><br>Test class: com.leaprural.salesordertests.CashOrderTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.CashOrderTest.VerifyTheRetailersListDetails()'><b>VerifyTheRetailersListDetails</b><br>Test class: com.leaprural.salesordertests.CashOrderTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.CashOrderTest@32d2fa64</td></tr>
+<tr>
+<td title='com.leaprural.claimstest.ClaimsValidationTest.claimspageexceldatavalidations()'><b>claimspageexceldatavalidations</b><br>Test class: com.leaprural.claimstest.ClaimsValidationTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.claimstest.ClaimsValidationTest@a38d7a3</td></tr>
+<tr>
+<td title='com.leaprural.claimstest.ClaimsValidationTest.claimspagevalidations()'><b>claimspagevalidations</b><br>Test class: com.leaprural.claimstest.ClaimsValidationTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.claimstest.ClaimsValidationTest@a38d7a3</td></tr>
+<tr>
+<td title='com.leaprural.homepagedashboardtests.ValidateDashboardTest.dashboardFieldValid()'><b>dashboardFieldValid</b><br>Test class: com.leaprural.homepagedashboardtests.ValidateDashboardTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.homepagedashboardtests.ValidateDashboardTest@1060b431</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.salesOrderCancelOrderButtonTest()'><b>salesOrderCancelOrderButtonTest</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.salesOrderCancelOrderDropdownTest()'><b>salesOrderCancelOrderDropdownTest</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest.secondaryDespatchPageUIValidationTest()'><b>secondaryDespatchPageUIValidationTest</b><br>Test class: com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest<br>Parameters: 610765, 610765, CP, RU, ASTHA GENERAL STORE, 7001768, ANTI DANDRUFF SHAMPOO 200ML, 2, , , </td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest@7b69c6ba</td></tr>
+<tr>
+<td title='com.leaprural.Reports.ClaimWorkingSheetTest.verifyClaimWorkingSheet()'><b>verifyClaimWorkingSheet</b><br>Test class: com.leaprural.Reports.ClaimWorkingSheetTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.ClaimWorkingSheetTest@77ec78b9</td></tr>
+<tr>
+<td title='com.leaprural.Reports.DetailedSalesRegisterGSTTest.verifyDetailedSalesRegisterGST()'><b>verifyDetailedSalesRegisterGST</b><br>Test class: com.leaprural.Reports.DetailedSalesRegisterGSTTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.DetailedSalesRegisterGSTTest@7a3d45bd</td></tr>
+<tr>
+<td title='com.leaprural.purchaseordertests.VerifyOrderStatusValues.verifyOderStatusFieldValues()'><b>verifyOderStatusFieldValues</b><br>Test class: com.leaprural.purchaseordertests.VerifyOrderStatusValues<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.purchaseordertests.VerifyOrderStatusValues@e874448</td></tr>
+<tr>
+<td title='com.leaprural.Reports.PurchaseRegisterGSTTest.verifyPurchaseRegisterGSTMenu()'><b>verifyPurchaseRegisterGSTMenu</b><br>Test class: com.leaprural.Reports.PurchaseRegisterGSTTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.PurchaseRegisterGSTTest@25af5db5</td></tr>
+<tr>
+<td title='com.leaprural.Reports.RetailerReportTest.verifyRetailerReportMenu()'><b>verifyRetailerReportMenu</b><br>Test class: com.leaprural.Reports.RetailerReportTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.RetailerReportTest@ed9d034</td></tr>
+<tr>
+<td title='com.leaprural.Reports.SummarySalesRegisterGSTTest.verifySalesRegisterGSTMenu()'><b>verifySalesRegisterGSTMenu</b><br>Test class: com.leaprural.Reports.SummarySalesRegisterGSTTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.SummarySalesRegisterGSTTest@60285225</td></tr>
+<tr>
+<td title='com.leaprural.Reports.SalesReturnSummaryTest.verifySalesReturnSummaryMenu()'><b>verifySalesReturnSummaryMenu</b><br>Test class: com.leaprural.Reports.SalesReturnSummaryTest<br>Parameters: 610765, 610765</td>
+<td></td>
+<td>0</td>
+<td>com.leaprural.Reports.SalesReturnSummaryTest@45820e51</td></tr>
+</table><p>
+</body>
+</html>

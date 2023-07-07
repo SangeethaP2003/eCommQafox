@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [eComm Test Suite]" verbose="2">
+  <test name="eComm Test(failed)">
+    <classes>
+      <class name="com.qafox.customer.verifyLoginPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="endReport"/>
+          <include name="sampleFailTest"/>
+          <include name="setUpDriver"/>
+          <include name="getResult"/>
+        </methods>
+      </class> <!-- com.qafox.customer.verifyLoginPage -->
+    </classes>
+  </test> <!-- eComm Test(failed) -->
+</suite> <!-- Failed suite [eComm Test Suite] -->

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Failed suite [Failed suite [Default suite]]]">
+  <test parallel="none" name="Default test(failed)(failed)(failed)">
+    <classes>
+      <class name="com.qafox.customer.verifyLoginPage">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyNewCustomer"/>
+          <include name="endReport"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.qafox.customer.verifyLoginPage -->
+    </classes>
+  </test> <!-- Default test(failed)(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [Failed suite [Default suite]]] -->

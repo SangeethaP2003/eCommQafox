@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="2" name="Failed suite [Leap Rural Test Suite]">
+  <test name="Leap Rural Test(failed)">
+    <classes>
+      <class name="com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest">
+        <methods>
+          <include name="DeleteProductsInPrimaryOrderExcelUpload"/>
+          <include name="PrimaryOrderExcelDownloadAndValidateFields"/>
+          <include name="ValidateGSTInfolink"/>
+          <include name="PrimaryOrderExcelUpload"/>
+          <include name="setUpDriver"/>
+        </methods>
+      </class> <!-- com.leaprural.purchaseordertests.PurchaseOrderExceluploadTest -->
+      <class name="com.leaprural.salesordertests.CashOrderTest">
+        <methods>
+          <include name="VerifyTheCashorderPageDetailsQtyValidation"/>
+          <include name="VerifyActiveRetailersListAscendingOrder"/>
+          <include name="VerifyTheRetailerPageDetails"/>
+          <include name="VerifyTheCashorderPageDetails"/>
+          <include name="VerifyTheRetailersListDetails"/>
+        </methods>
+      </class> <!-- com.leaprural.salesordertests.CashOrderTest -->
+      <class name="com.leaprural.GRNTest.GoodReceiptNoteTest">
+        <methods>
+          <include name="CreateGRN"/>
+          <include name="GRNPageFieldsValidationTest"/>
+        </methods>
+      </class> <!-- com.leaprural.GRNTest.GoodReceiptNoteTest -->
+      <class name="com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest">
+        <methods>
+          <include name="CreatePrimaryReturnAndApproveBySS"/>
+        </methods>
+      </class> <!-- com.leaprural.PrimaryReturnsTest.ValidatePrimaryReturnsTest -->
+      <class name="com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD">
+        <methods>
+          <include name="ISRpurchaseorderconfirmationbySUBDweb"/>
+        </methods>
+      </class> <!-- com.leaprural.purchaseordertests.ISRCreatePrimaryOrderAndConfirmBySUBD -->
+      <class name="com.leaprural.stocktests.SubDStockTransfer">
+        <methods>
+          <include name="StockTransferApprovedBySalesOfficer"/>
+          <include name="StockTransferCancelInvoice"/>
+        </methods>
+      </class> <!-- com.leaprural.stocktests.SubDStockTransfer -->
+      <class name="com.leaprural.andriodtests.SUBDMobileSchemesMenu">
+        <methods>
+          <include name="SUBDMobileSchemes_SyncTest"/>
+          <include name="SUBDMobileSchemesTest"/>
+        </methods>
+      </class> <!-- com.leaprural.andriodtests.SUBDMobileSchemesMenu -->
+      <class name="com.leaprural.salesordertests.DeliveryConfirmationTest">
+        <methods>
+          <include name="DeliveryConfirmationPageFieldsValidationTest"/>
+          <include name="OrderSearchwithRetailerType"/>
+          <include name="DeliveryConfirmationSearchSalesOrderNum"/>
+        </methods>
+      </class> <!-- com.leaprural.salesordertests.DeliveryConfirmationTest -->
+      <class name="com.leaprural.stocktests.StockSummaryTest">
+        <methods>
+          <include name="ValidateSearchWithProductID"/>
+          <include name="ValidateSearchWithProductName"/>
+          <include name="VerifyStockorderdetailspage"/>
+        </methods>
+      </class> <!-- com.leaprural.stocktests.StockSummaryTest -->
+      <class name="com.leaprural.purchaseordertests.VerifyOrderStatusValues">
+        <methods>
+          <include name="verifyOderStatusFieldValues"/>
+        </methods>
+      </class> <!-- com.leaprural.purchaseordertests.VerifyOrderStatusValues -->
+      <class name="com.leaprural.Reports.SummarySalesRegisterGSTTest">
+        <methods>
+          <include name="verifySalesRegisterGSTMenu"/>
+        </methods>
+      </class> <!-- com.leaprural.Reports.SummarySalesRegisterGSTTest -->
+      <class name="com.leaprural.Reports.SalesReturnSummaryTest">
+        <methods>
+          <include name="verifySalesReturnSummaryMenu"/>
+        </methods>
+      </class> <!-- com.leaprural.Reports.SalesReturnSummaryTest -->
+      <class name="com.leaprural.andriodtests.SUBDMobileStockMenu">
+        <methods>
+          <include name="SUBDMobileStockSyncTest"/>
+          <include name="SUBDMobileStockLedgerTest"/>
+          <include name="SUBDMobileStockSummaryTest"/>
+        </methods>
+      </class> <!-- com.leaprural.andriodtests.SUBDMobileStockMenu -->
+      <class name="com.leaprural.andriodtests.SUBDMobilePrimaryReturns">
+        <methods>
+          <include name="SUBDMobilePrimaryReturnsOrder"/>
+        </methods>
+      </class> <!-- com.leaprural.andriodtests.SUBDMobilePrimaryReturns -->
+      <class name="com.leaprural.Reports.PurchaseRegisterGSTTest">
+        <methods>
+          <include name="verifyPurchaseRegisterGSTMenu"/>
+        </methods>
+      </class> <!-- com.leaprural.Reports.PurchaseRegisterGSTTest -->
+      <class name="com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest">
+        <methods>
+          <include name="SecondarySalesReturnAndConfirmTest"/>
+          <include name="SecondarySalesReturnPageValidationTest"/>
+        </methods>
+      </class> <!-- com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnTest -->
+      <class name="com.leaprural.andriodtests.SUBDMobilePrimaryOrder">
+        <methods>
+          <include name="SUBDMobileCreatePrimaryOrder"/>
+          <include name="ConfirmPrimaryOrderFromISR"/>
+        </methods>
+      </class> <!-- com.leaprural.andriodtests.SUBDMobilePrimaryOrder -->
+      <class name="com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest">
+        <methods>
+          <include name="DeliveryConfirmation"/>
+          <include name="PartialOrderDelivery"/>
+          <include name="secondaryDespatchPageUIValidationTest"/>
+          <include name="salesOrderCancelOrderDropdownTest"/>
+          <include name="salesOrderCancelOrderButtonTest"/>
+        </methods>
+      </class> <!-- com.leaprural.salesordertests.SecondaryDispatchandBillingValidationTest -->
+      <class name="com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu">
+        <methods>
+          <include name="SUBDMobileUserActivities_InfoTest"/>
+          <include name="SUBDMobileUserActivities_ProfileTest"/>
+          <include name="SUBDMobileUserActivities_FeedbackTest"/>
+          <include name="SUBDMobileUserActivities_SupportTest"/>
+        </methods>
+      </class> <!-- com.leaprural.andriodtests.SUBDMobileUserActivitiesMenu -->
+      <class name="com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest">
+        <methods>
+          <include name="VerifyOrderPagePreviewDetails"/>
+          <include name="VerifyCashDiscountFieldValidations"/>
+          <include name="VerifyTheRetailerCreditOrder"/>
+        </methods>
+      </class> <!-- com.leaprural.salesordertests.CashOrderPreviewPageDetailsTest -->
+      <class name="com.leaprural.Reports.DetailedSalesRegisterGSTTest">
+        <methods>
+          <include name="verifyDetailedSalesRegisterGST"/>
+        </methods>
+      </class> <!-- com.leaprural.Reports.DetailedSalesRegisterGSTTest -->
+      <class name="com.leaprural.Reports.ClaimWorkingSheetTest">
+        <methods>
+          <include name="verifyClaimWorkingSheet"/>
+        </methods>
+      </class> <!-- com.leaprural.Reports.ClaimWorkingSheetTest -->
+      <class name="com.leaprural.claimstest.ClaimsValidationTest">
+        <methods>
+          <include name="claimspageexceldatavalidations"/>
+          <include name="claimspagevalidations"/>
+        </methods>
+      </class> <!-- com.leaprural.claimstest.ClaimsValidationTest -->
+      <class name="com.leaprural.andriodtests.ISRMobilePrimaryOrder">
+        <methods>
+          <include name="CheckDriver"/>
+          <include name="ISRMobilePrimaryOrderCreation" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.leaprural.andriodtests.ISRMobilePrimaryOrder -->
+      <class name="com.leaprural.Reports.RetailerReportTest">
+        <methods>
+          <include name="verifyRetailerReportMenu"/>
+        </methods>
+      </class> <!-- com.leaprural.Reports.RetailerReportTest -->
+      <class name="com.leaprural.stocktests.StockAnalysisReportTest">
+        <methods>
+          <include name="StockAnalysis"/>
+        </methods>
+      </class> <!-- com.leaprural.stocktests.StockAnalysisReportTest -->
+      <class name="com.leaprural.stocktests.StockLedgerTest">
+        <methods>
+          <include name="StockLedgerDownloadAndValidate"/>
+          <include name="StockLedgerPageFieldsvalidationTest"/>
+        </methods>
+      </class> <!-- com.leaprural.stocktests.StockLedgerTest -->
+      <class name="com.leaprural.salesordertests.InvoiceCancellationValidationsTest">
+        <methods>
+          <include name="ValidateInvoiceCancellation"/>
+          <include name="CancelInvoiceForFullyDeliveredOrder"/>
+          <include name="CancelInvoiceForPartialDeliveredOrder"/>
+        </methods>
+      </class> <!-- com.leaprural.salesordertests.InvoiceCancellationValidationsTest -->
+      <class name="com.leaprural.homepagedashboardtests.ValidateDashboardTest">
+        <methods>
+          <include name="dashboardFieldValid"/>
+        </methods>
+      </class> <!-- com.leaprural.homepagedashboardtests.ValidateDashboardTest -->
+      <class name="com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest">
+        <methods>
+          <include name="SecondarySalesReturnConfirmPageFields"/>
+          <include name="SecondarySalesReturnConfirmPageSearch"/>
+        </methods>
+      </class> <!-- com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnConfirmTest -->
+      <class name="com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR">
+        <methods>
+          <include name="CreatePurchaseorderBySUBD"/>
+        </methods>
+      </class> <!-- com.leaprural.purchaseordertests.PurchaseOrderCreationBySUBDandApprovalByISR -->
+      <class name="com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu">
+        <methods>
+          <include name="SUBDMobileRetailersInfo_SyncTest"/>
+          <include name="SUBDMobileRetailersInfoTestTest"/>
+        </methods>
+      </class> <!-- com.leaprural.andriodtests.SUBDMobileRetailersInfoMenu -->
+      <class name="com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest">
+        <methods>
+          <include name="SecondarySalesReturnExcelUpload"/>
+          <include name="SecondarySalesReturnExcelUploadPageFieldValidation"/>
+        </methods>
+      </class> <!-- com.leaprural.SecondaySalesReturnTest.SecondarySalesReturnExcelUploadTest -->
+      <class name="com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize">
+        <methods>
+          <include name="VerifyStdPackInvoiceEdit"/>
+          <include name="VerifyStdPackInvoiceCancellation"/>
+          <include name="ValidatemultipleMRPproducts"/>
+          <include name="VerifyCashOrderForStandradPackSizeProducts"/>
+          <include name="VerifyStdPackCashorderPageDetailsQtyValidation"/>
+        </methods>
+      </class> <!-- com.leaprural.salesordertests.CashOrderForProductsConfiguredWithStandradPackSize -->
+    </classes>
+  </test> <!-- Leap Rural Test(failed) -->
+</suite> <!-- Failed suite [Leap Rural Test Suite] -->
